@@ -1,6 +1,6 @@
 {
   "name": "koatty_graphql",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A converter to transform from graphQL to Typescript DTO.",
   "scripts": {
     "build": "del-cli --force dist && tsc",
