@@ -3,7 +3,7 @@
  * @Usage: 
  * @Author: richen
  * @Date: 2025-03-10 20:08:34
- * @LastEditTime: 2025-03-10 20:33:03
+ * @LastEditTime: 2025-03-10 20:59:17
  * @License: BSD (3-Clause)
  * @Copyright (c): <richenlin(at)gmail.com>
  */
@@ -88,7 +88,7 @@ export function parseTypeDefinitions(document: DocumentNode) {
  * @param type 
  * @returns 
  */
-function getTypeName(type: TypeNode | NamedTypeNode): string {
+export function getTypeName(type: TypeNode | NamedTypeNode): string {
   if (type.kind === 'NonNullType') {
     return `${getTypeName(type.type)}`;
   }
