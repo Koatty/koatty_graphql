@@ -12,6 +12,8 @@ import {
   DocumentNode, Kind, NamedTypeNode,
   ObjectTypeExtensionNode, parse, TypeNode
 } from "graphql";
+// export
+export * from "graphql";
 
 const baseTypes = ['string', 'number', 'boolean', 'ID'];
 export const operationTypes = ['Query', 'Mutation', 'Subscription'];
