@@ -3,7 +3,7 @@
  * @Usage: 
  * @Author: richen
  * @Date: 2025-03-10 20:08:34
- * @LastEditTime: 2025-03-10 20:59:17
+ * @LastEditTime: 2025-03-12 18:21:59
  * @License: BSD (3-Clause)
  * @Copyright (c): <richenlin(at)gmail.com>
  */
@@ -15,7 +15,7 @@ import {
 // export
 export * from "graphql";
 
-const baseTypes = ['string', 'number', 'boolean', 'ID'];
+export const baseTypes = ['string', 'number', 'boolean', 'ID'];
 export const operationTypes = ['Query', 'Mutation', 'Subscription'];
 // 类型映射转换
 const typeMap: any = {
