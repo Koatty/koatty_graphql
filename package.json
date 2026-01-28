@@ -45,7 +45,7 @@
     "typescript": "^5.x.x"
   },
   "dependencies": {
-    "graphql": "^16.10.0",
+    "graphql": "^16.12.0",
     "koatty_lib": "workspace:*"
   },
   "peerDependencies": {
