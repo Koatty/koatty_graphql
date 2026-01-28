@@ -1,14 +1,13 @@
 {
   "name": "koatty_graphql",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A converter to transform from graphQL to Typescript DTO.",
   "scripts": {
-    "build": "del-cli --force dist && tsc",
+    "build": "npx del-cli --force dist && npx tsc && node -e \"require('fs').copyFileSync('package.json', 'dist/package.json')\"",
     "eslint": "eslint --ext .ts,.js ./",
     "lock": "npm i --package-lock-only",
     "prepublishOnly": "npm test && npm run build && git push --follow-tags origin",
     "prerelease": "npm test && npm run build",
-    "release": "standard-version",
     "test": "npm run eslint && jest --passWithNoTests"
   },
   "main": "./dist/index.js",
@@ -47,9 +46,9 @@
   },
   "dependencies": {
     "graphql": "^16.10.0",
-    "koatty_lib": "^1.x.x"
+    "koatty_lib": "workspace:*"
   },
   "peerDependencies": {
-    "koatty_lib": "^1.x.x"
+    "koatty_lib": "workspace:*"
   }
 }
