@@ -1,6 +1,6 @@
 {
   "name": "koatty_graphql",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A converter to transform from graphQL to Typescript DTO.",
   "scripts": {
     "build": "npx del-cli --force dist && npx tsc && node -e \"require('fs').copyFileSync('package.json', 'dist/package.json')\"",
