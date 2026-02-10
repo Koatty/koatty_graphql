@@ -1,6 +1,6 @@
 {
   "name": "koatty_graphql",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "A converter to transform from graphQL to Typescript DTO.",
   "scripts": {
     "build": "tsup && pnpm run build:cp",
@@ -43,7 +43,7 @@
     "koatty_lib": "workspace:*"
   },
   "peerDependencies": {
-    "koatty_lib": "^1.4.6"
+    "koatty_lib": "^1.4.7"
   },
   "types": "./dist/index.d.ts"
 }
