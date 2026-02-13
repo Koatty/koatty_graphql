@@ -1,6 +1,6 @@
 {
   "name": "koatty_graphql",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A converter to transform from graphQL to Typescript DTO.",
   "scripts": {
     "build": "pnpm run build:js && pnpm run build:dts && pnpm run build:cp",
